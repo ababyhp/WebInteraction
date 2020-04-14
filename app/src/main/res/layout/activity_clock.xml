@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.animee.loadweb.ClockView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:clockColor = "#00ff00"
+        android:id="@+id/clockview"/>
+
+    <com.animee.loadweb.ClockView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:clockColor = "#ff0000"
+        android:id="@+id/clockview2"/>
+
+    <com.animee.loadweb.ClockView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/clockview3"/>
+</LinearLayout>

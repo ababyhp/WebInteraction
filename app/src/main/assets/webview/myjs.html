@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <title>js test</title>
+    <!-- css在这里link -->
+    <!-- 这里可以指定jquery地址 -->
+    <script src="http://~~~"></script>
+    <script type="text/javascript">
+        function testAlert(){
+            alert("this is an alert.");
+        }
+        function testConfirm(){
+            var r=confirm("this is a confirm");
+            alert(r);
+        }
+        function testPrompt(){
+            var r=prompt("this is a prompt","hint");
+            alert(r);
+        }
+       
+       function call(){
+           <!--调用android当中的函数-->
+           var r = window.animee.callFromJS("123");
+
+       }
+
+
+    </script>
+</head>
+<body>
+<input type="button" onClick="testAlert()" value="testAlert"/>
+<input type="button" onClick="testConfirm()" value="testConfirm"/>
+<input type="button" onClick="testPrompt()" value="testPrompt"/>
+<input type="button" onclick="call()" value="android function">
+</body>
+</html>

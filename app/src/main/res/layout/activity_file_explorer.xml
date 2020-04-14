@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".file_explorer.FileExplorerActivity">
+    <TextView
+        android:id="@+id/id_tv_filepath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文件路径:/mnt/sdcard/"/>
+
+    <ImageButton
+        android:id="@+id/id_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/back"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:id="@+id/id_lv_file"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_tv_filepath"
+        android:layout_above="@id/id_btn_back"
+        android:divider="#000"
+        android:dividerHeight="1dp">
+
+    </ListView>
+</RelativeLayout>
